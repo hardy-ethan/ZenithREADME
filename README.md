@@ -26,3 +26,6 @@ Once logged in, you can optionally elect to join the Discord server, where we di
 * (Optionally, Advanced), have the generator choose classes for you from a provided expression, based on which would have the best schedule. For example, you can input along the lines of "EECS280, EECS203, and either both PHYSICS140 and PHYSICS141 or CHEM210 and CHEM211).
 * Light/dark mode
 * Will not generate north/central back to backs, unless you specify that you will not be attending one or both of the classes
+
+## Architecture Diagram
+![Architecture Diagram](https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/main/architecture_diagram.png)
