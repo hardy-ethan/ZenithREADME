@@ -29,3 +29,7 @@ Once logged in, you can optionally elect to join the Discord server, where we di
 
 ## Architecture Diagram
 ![Architecture Diagram](https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/main/architecture_diagram.png)
+
+## Usage Examples
+### Generating a Simple First Year Engineering Schedule
+![Generating a Simple First Year Engineering Schedule](https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/main/simple_first_year.gif)
