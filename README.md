@@ -15,4 +15,4 @@ Simply visit https://beta.zenithscheduler.com, click the Login button (make sure
 
 Once logged in, you can optionally elect to join the Discord server, where we discuss potential features, bugs, and suggestions.
 
-![Location of Discord Server button](https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/main/discord_screenshot.png)
+<img alt="Location of Discord Server button" src="https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/main/discord_screenshot.png" width="500" />
