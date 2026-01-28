@@ -4,11 +4,11 @@
 Schedule generator that takes the wants and needs of students into account.
 
 ## Table of Contents
-* Quickstart Guide
-* Feature List
-* Architecture Diagram
-* Usage examples
-* FAQ
+* [Quickstart Guide](#quickstart-guide)
+* [Feature List](#feature-list)
+* [Architecture Diagram](#architecture-diagram)
+* [Usage Examples](#usage-examples)
+* [FAQ](#faq)
 
 ## Quickstart Guide
 Simply visit https://beta.zenithscheduler.com, click the Login button (make sure you select your UMich Google account), and you're good to go! 
