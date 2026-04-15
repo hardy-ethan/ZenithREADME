@@ -15,7 +15,7 @@ Simply visit https://beta.zenithscheduler.com, click the Login button (make sure
 
 Once logged in, you can optionally elect to join the Discord server, where we discuss potential features, bugs, and suggestions.
 
-<img alt="Location of Discord Server button" src="https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/main/discord_screenshot.png" width="500" />
+<img alt="Location of Discord Server button" src="https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/original_submission/discord_screenshot.png" width="500" />
 
 ## Feature List
 * Consider preferences, e.g. you like/dislike gaps, starting early in the day, etc.
@@ -28,13 +28,13 @@ Once logged in, you can optionally elect to join the Discord server, where we di
 * Will not generate north/central back to backs, unless you specify that you will not be attending one or both of the classes
 
 ## Architecture Diagram
-![Architecture Diagram](https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/main/architecture_diagram.png)
+![Architecture Diagram](https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/original_submission/architecture_diagram.png)
 
 ## Usage Examples
 ### Generating a Simple First Year Engineering Schedule
-![Generating a Simple First Year Engineering Schedule](https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/main/simple_first_year.gif)
+![Generating a Simple First Year Engineering Schedule](https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/original_submission/simple_first_year.gif)
 ### Having the Scheduler Choose Classes from a Course Expression
-![Having the Scheduler Choose Classes from a Course Expression](https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/main/course_expression.gif)
+![Having the Scheduler Choose Classes from a Course Expression](https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/original_submission/course_expression.gif)
 
 ## FAQ
 * Q: Why use Zenith over the Atlas Schedule Builder?
