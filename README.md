@@ -1,14 +1,14 @@
 <img src="https://beta.zenithscheduler.com/favicon.ico" width="128" />
 
 # Zenith Scheduler
-Schedule generator that takes the wants and needs of students into account.
+Zenith is a schedule generator for University of Michigan students that optimizes your class schedule around your preferences, like avoiding early mornings, minimizing gaps between classes, and ensuring time for lunch.
 
 ## Table of Contents
 * [Quickstart Guide](#quickstart-guide)
 * [Feature List](#feature-list)
-* [Architecture Diagram](#architecture-diagram)
 * [Usage Examples](#usage-examples)
 * [FAQ](#faq)
+* [Architecture](#architecture)
 
 ## Quickstart Guide
 Simply visit https://beta.zenithscheduler.com, click the Login button (make sure you select your UMich Google account), and you're good to go! 
@@ -27,17 +27,20 @@ Once logged in, you can optionally elect to join the Discord server, where we di
 * Light/dark mode
 * Will not generate north/central back to backs, unless you specify that you will not be attending one or both of the classes
 
-## Architecture Diagram
-![Architecture Diagram](https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/main/architecture_diagram.png)
-
 ## Usage Examples
 ### Generating a Simple First Year Engineering Schedule
 ![Generating a Simple First Year Engineering Schedule](https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/main/simple_first_year.gif)
-### Having the Scheduler Choose Classes from a Course Expression
-![Having the Scheduler Choose Classes from a Course Expression](https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/main/course_expression.gif)
+### Using a Course Expression to Handle Complex Requirements
+![Using a Course to Handle Complex Requirements](https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/main/course_expression.gif)
 
 ## FAQ
 * Q: Why use Zenith over the Atlas Schedule Builder?
-    * A: Zenith has every capability the Atlas Schedule Builder has, as well as features to optimize your schedule. You will simply only gain functionality by using Zenith.
+    * A: Atlas lets you browse and manually build a schedule, but it doesn't optimize for your preferences. Zenith automatically finds the best schedule based on criteria you set, like preferring late starts, minimizing gaps, ensuring a lunch break, and avoiding north/central campus back-to-backs. It can also choose between alternative course combinations for you using expressions (e.g., "PHYSICS 140+141 or CHEM 210+211") and pick whichever yields the better schedule.
 * Q: What data do you collect about me?
-    * A: We do process your logins with your UMich Google Account, but we never store your email, and no schedules are ever associated with an user identifiers.
+    * A: We do process your logins with your UMich Google Account, but we never store your email, and no schedules are ever associated with any user identifiers.
+
+## Architecture
+
+![Architecture Diagram](https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/main/architecture_diagram.png)
+
+When a user submits a schedule request, the Web Workers serve the frontend and handle the API. The request is written to a Solver Queue Database and picked up by a Queue Worker, which formulates the scheduling problem as an integer linear program (ILP). The ILP encodes hard constraints (no time conflicts, required section types, banned instructors) and soft objectives (gap preference, late start preference, empty day preference) as a weighted optimization problem. Sections, meeting times, instructors, and enrollment status are fetched from the UMich Schedule of Classes API. Once the solver finds an optimal schedule, the result is sent back to the user over a WebSocket connection.
