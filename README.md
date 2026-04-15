@@ -28,10 +28,25 @@ Once logged in, you can optionally elect to join the Discord server, where we di
 * Will not generate north/central back to backs, unless you specify that you will not be attending one or both of the classes
 
 ## Usage Examples
-### Generating a Simple First Year Engineering Schedule
-![Generating a Simple First Year Engineering Schedule](https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/main/simple_first_year.gif)
-### Using a Course Expression to Handle Complex Requirements
-![Using a Course to Handle Complex Requirements](https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/main/course_expression.gif)
+### Step 1: Enter Your Courses
+Add courses to your course expression. Here we add MATH215, ENGR100, and EECS280 for a typical first-year engineering schedule.
+
+![Adding courses to the course expression](https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/main/zenith_select_courses.gif)
+
+### Step 2: Set Your Preferences
+Configure time constraints and preferences — such as allowed meeting times, gap preferences, whether you want a late start, and ensuring time for lunch.
+
+![Setting schedule preferences and time constraints](https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/main/zenith_choose_options.gif)
+
+### Step 3: Adjust Objective Weights
+Fine-tune how much each preference matters by adjusting the objective weights. For example, increase the gap weight if minimizing breaks between classes is more important to you than starting late.
+
+![Adjusting objective weights with sliders](https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/main/zenith_weigh_options.gif)
+
+### Step 4: Generate Your Schedule
+Hit "Generate Schedule" and Zenith will find the optimal schedule that best satisfies your preferences.
+
+![Generating the final optimized schedule](https://raw.githubusercontent.com/hardy-ethan/ZenithREADME/refs/heads/main/zenith_generate_schedule.gif)
 
 ## FAQ
 * Q: Why use Zenith over the Atlas Schedule Builder?
